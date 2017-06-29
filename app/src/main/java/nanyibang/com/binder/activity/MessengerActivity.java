@@ -1,4 +1,4 @@
-package nanyibang.com.binder;
+package nanyibang.com.binder.activity;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -13,6 +13,8 @@ import android.os.RemoteException;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
+import nanyibang.com.binder.Constants;
+import nanyibang.com.binder.R;
 import nanyibang.com.binder.service.MessagerService;
 
 public class MessengerActivity extends AppCompatActivity {

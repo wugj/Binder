@@ -11,4 +11,9 @@ package nanyibang.com.binder;
 public class Constants {
     public final static int MSG_FROM_CLIENT = 1;
     public final static int MSG_FROM_SERVER = 2;
+
+    public final static int BINDER_SECURITY_CENTER = 3;
+    public final static int BINDER_COMPUTE = 4;
+
+
 }

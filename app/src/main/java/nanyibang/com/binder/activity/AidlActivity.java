@@ -1,4 +1,4 @@
-package nanyibang.com.binder;
+package nanyibang.com.binder.activity;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -16,12 +16,14 @@ import android.view.View;
 
 import java.util.List;
 
+import nanyibang.com.binder.Constants;
+import nanyibang.com.binder.R;
 import nanyibang.com.binder.aidl.Book;
 import nanyibang.com.binder.aidl.IBookManager;
 import nanyibang.com.binder.aidl.IOnNewBookArrivedListener;
 import nanyibang.com.binder.service.BookManagerService;
 
-public class MainActivity extends AppCompatActivity {
+public class AidlActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
 
@@ -94,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.e(TAG, "onCreate: 开始链接");
-        Intent intent = new Intent(MainActivity.this, BookManagerService.class);
+        Intent intent = new Intent(AidlActivity.this, BookManagerService.class);
         bindService(intent, mConnection, Context.BIND_AUTO_CREATE);
     }
 
